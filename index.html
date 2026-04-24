@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Знак зодиака</title>
+  <link rel="shortcut icon" href="image/c0071daa8748d145c67b846156d94bca.jpg" type="image/jpg">
+  <link rel="stylesheet" href="reset3.css">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="card">
+    <h1>✦ Знак зодиака</h1>
+    <p class="subtitle">Введи дату рождения, чтобы узнать свой знак</p>
+    <div class="row">
+      <div class="field">
+        <label for="month">Месяц</label>
+        <select id="month">
+          <option value="">— выбери —</option>
+          <option value="1">Январь</option>
+          <option value="2">Февраль</option>
+          <option value="3">Март</option>
+          <option value="4">Апрель</option>
+          <option value="5">Май</option>
+          <option value="6">Июнь</option>
+          <option value="7">Июль</option>
+          <option value="8">Август</option>
+          <option value="9">Сентябрь</option>
+          <option value="10">Октябрь</option>
+          <option value="11">Ноябрь</option>
+          <option value="12">Декабрь</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="day">День</label>
+        <input type="number" id="day" min="1" max="31" placeholder="1–31"/>
+      </div>
+    </div>
+
+    <p class="error" id="err">Пожалуйста, выбери месяц и введи день.</p>
+    <button id="button-zodiac">Узнать знак →</button>
+
+    <div class="result" id="result">
+      <div class="sign-symbol" id="sym"></div>
+      <div class="sign-name" id="sname"></div>
+      <div class="sign-dates" id="selement"></div>
+      <div class="sign-desc" id="sdesc"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

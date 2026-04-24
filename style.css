@@ -1,0 +1,152 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #0d0d1a;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  color: #e8e6f0;
+}
+
+.card {
+  background: #16162a;
+  border: 1px solid #2e2b50;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 460px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #c9c0f5;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #7a75a0;
+  margin-bottom: 2rem;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+label {
+  font-size: 13px;
+  color: #9e99c0;
+}
+
+select, input[type="number"] {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #2e2b50;
+  background: #0d0d1a;
+  color: #e8e6f0;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+select:focus, input[type="number"]:focus {
+  border-color: #7c6fd4;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 0.5rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #6c5ce7, #9b8ff5);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+  letter-spacing: 0.2px;
+}
+
+button:hover { opacity: 0.9; }
+button:active { transform: scale(0.98); }
+
+.error {
+  color: #f08080;
+  font-size: 13px;
+  margin-top: 8px;
+  display: none;
+}
+
+.result {
+  margin-top: 2rem;
+  background: #0d0d1a;
+  border: 1px solid #2e2b50;
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.sign-symbol {
+  font-size: 58px;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.sign-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #c9c0f5;
+  margin-bottom: 0.3rem;
+}
+
+.sign-dates {
+  font-size: 13px;
+  color: #7a75a0;
+  margin-bottom: 1rem;
+}
+
+.sign-element {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  background: #1e1a3a;
+  border: 1px solid #3a3560;
+  color: #9b8ff5;
+  margin-bottom: 1rem;
+}
+
+.sign-desc {
+  font-size: 14px;
+  color: #9e99c0;
+  line-height: 1.7;
+}
