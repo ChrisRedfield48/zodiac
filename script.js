@@ -86,8 +86,7 @@ function search(){
         document.getElementById('err').style.color = 'red'
         return
     }
-
-
+    document.getElementById('err').textContent = ''
 let myInfo = null
 myZodiac.forEach(el => {
     if(monthBirth === el.startMonth && birthDay >= el.startDay || monthBirth === el.endMonth && birthDay <= el.endDay){
@@ -101,4 +100,7 @@ document.getElementById('result').style.display = 'block'
     zodiacElement.textContent = myInfo.element
     zodiacDesc.textContent = myInfo.desc
 }
+
+document.getElementById('month').value = ''
+document.getElementById('day').value = ''
 }
